@@ -1,0 +1,12 @@
+.inputSection {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.form {
+  margin: 1rem;
+  border-radius: var(--border-radius-01);
+  background: var(--color-white);
+  color: var(--color-quaternairy);
+}
