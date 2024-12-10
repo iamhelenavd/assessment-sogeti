@@ -1,52 +1,82 @@
-# React + TypeScript + Vite
+# About the project 🎉
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+I had the pleasure of working on this assignment, and it has been an exciting journey from start to finish👩‍💻.
+Throughout the development process, I focused on creating a user-friendly and efficient solution within the time available. I aimed to incorporate best practices and the latest technologies. This project reflects my passion for coding and my commitment to ensuring consistency in coding standards. That is why I chose Prettier. This project demonstrates the implementation of the Atomic Design methodology, which organizes components in a clear and scalable manner. The structure showcases my interest in thoughtful and efficient design architecture. Furthermore, CSS Modules are used in this project to prevent classname collisions and to ensure modular and maintainable styles. Thank you for your interest, feel free to explore, contribute, and please provide feedback, because I know its not 100%! I am excited to share it with you 😊.
 
-Currently, two official plugins are available:
+## Table of contents
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- [About the project 🎉](#about-the-project-)
+- [Table of contents](#table-of-contents)
+- [Requirements](#requirements)
+- [Built with](#built-with)
+- [Getting started](#getting-started)
+- [Project structure](#project-structure)
+- [Commits specification](#commits-specification)
 
-## Expanding the ESLint configuration
+## Requirements
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- [&#10004] The application can search movies by title
+- [&#10004] Used State management and management by TanStack.
+- [&#10004] A single search query returns the top 5 movies as provided by the Search API
+- [&#10004] For each movie the following information will be displayed: poster,
+  title(released), type, year, rated, genre, director, actors, plot(full), awards
+- [&#10004] The application highlights two predefined movies, displaying the following information: title, year, awards, poster,
+  plot(full)
+- [&#10004] When searching movies plot can be set to either ‘full‘ or ‘short’.
+- [&#10004] Display genre and actors as a list instead of comma separated
+- [&#10004] Responsive design
 
-- Configure the top-level `parserOptions` property like this:
+## Built with
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ["./tsconfig.node.json", "./tsconfig.app.json"],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-});
+- [TypeScript](https://www.typescriptlang.org/docs/)
+- [React](https://react.dev/)
+- [Vite](https://vite.dev/guide/)
+- [Tanstack Queries](https://valibot.dev/)
+- [Tanstack Router](https://storybook.js.org/)
+- [Tanstack Form](https://tanstack.com/form/latest)
+- [(Framer) Motion](https://www.framer.com/motion/)
+
+## Getting started
+
+- Install PNPM packages
+  ```sh
+  pnpm install
+  ```
+- Run project
+
+  ```sh
+  pnpm run dev
+
+  ```
+
+## Project structure
+
+This project demonstrates an implementation of the Atomic Design methodology, which organizes components in a clear and scalable manner. The structure is designed to show my interest in thoughtful and efficient design architecture:
+
+- Atoms: Basic building blocks of the UI (e.g., buttons, input fields).
+- Molecules: Groups of atoms functioning together (e.g., form inputs with labels).
+- Organisms: Complex components composed of molecules (e.g., navigation bars, forms).
+- Templates: Page-level structures that place components into a layout.
+- Pages: Specific instances of templates with real content
+
+## Commits specification
+
+Write clear and concise commit messages that describe the changes made.
+
+```sh
+[<type>]<scope>: (<referencing issues>)<description>
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+- **`<type>`**: The type of change. Common options:
 
-```js
-// eslint.config.js
-import react from "eslint-plugin-react";
+* feature: A new feature
+* fix: A bug fix
+* docs: Documentation only changes
+* style: Changes that do not affect the meaning of the code(white-space, formatting, missing semi-colons, etc)
+* refactor: A code change that neither fixes a bug nor adds a feature that improves performance
+* test: Adding missing tests
+* chore: Changes to the build process or auxiliary tools and libraries such as documentation generation
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: "18.3" } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs["jsx-runtime"].rules,
-  },
-});
-```
-
-# assessment-sogeti
+- **`<scope>`** (optional): The specific part of the codebase affected (e.g., `header`, `api`, `utils`).
+- **`<description>`**: A brief description of the change (imperative mood, e.g., "add", "fix", "update").
+- **`[<referencing issues>]`** (optional): References to related issues, formatted like `(#123)`.
