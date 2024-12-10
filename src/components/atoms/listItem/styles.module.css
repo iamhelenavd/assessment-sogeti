@@ -1,0 +1,10 @@
+.listItem {
+  border-radius: var(--border-radius-02);
+  background-color: var(--transparent01);
+  padding: var(--spacing-x01) var(--spacing-x04);
+}
+
+.ghost {
+  border:  var(--border-01);
+  background-color: transparent;
+}
