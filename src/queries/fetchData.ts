@@ -46,7 +46,7 @@ export const fetchMoviesByTitle = async (
     if (error instanceof Error) {
       throw new Error(`An error occurred: ${error.message}`);
     }
-    throw error
+    throw error;
   }
 };
 

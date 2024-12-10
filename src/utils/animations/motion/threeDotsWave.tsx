@@ -38,7 +38,7 @@ const DotVariants = {
   },
 };
 
-const DotTransition: AnimationProps['transition'] = {
+const DotTransition: AnimationProps["transition"] = {
   duration: 0.5,
   repeat: Infinity,
   repeatType: "mirror",
