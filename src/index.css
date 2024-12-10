@@ -1,4 +1,5 @@
 body {
+  background-color: var(--color-secondary);
   font-size: var(--base-font-size);
 }
 
@@ -6,18 +7,89 @@ html {
   font-size: 62.5%;
 }
 
+h1,
+h2,
+h3 {
+  color: var(--color-secondary);
+  font-weight: var(--bold-font-weigh);
+}
+
+h1 {
+  font-size: 2rem;
+
+  @media (width >= 768px) {
+    font-size: 2.4rem;
+  }
+}
+
+h3 {
+  font-weight: var(--bold-font-weigh);
+  font-size: 2.3rem;
+  text-transform: uppercase;
+}
+
+h4 {
+  color: var(--color-tertiary);
+}
+
+ul,
+li {
+  padding: 0;
+  list-style-type: none;
+}
+
 :root {
-  font-family: var(--base-font-family);
-  font-optical-sizing: auto;
-  font-weight: var(--base-font-weight);
-  line-height: 1.4;
   font-style: normal;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-weight: var(--base-font-weight);
+  line-height: 1.4;
+  font-family: var(--base-font-family);
+  font-optical-sizing: auto;
 
   /* font-size */
   --base-font-family: "Roboto", Arial, sans-serif;
   --base-font-size: 1.6rem;
   --base-font-weight: 400;
+
+  /* font-weight */
+  --bold-font-weight: 900;
+
+  /* main colors */
+  --color-primary: #07012b;
+  --color-secondary: #250f4d;
+  --color-tertiary: #f5c518;
+  --color-quaternairy: #333;
+  --color-quinary: #0ea39e;
+
+  --color-white: #ffff;
+  --color-black: #000;
+
+  --transparent01: rgb(253, 253, 253, 0.1);
+  --transparent03: rgba(0, 0, 0, 0.3);
+
+  /* spacings */
+  --spacing-x01: 0.4rem;
+  --spacing-x02: 0.8rem;
+  --spacing-x03: 1.2rem;
+  --spacing-x04: 1.6rem;
+  --spacing-x05: 2rem;
+  --spacing-x06: 2.4rem;
+  --spacing-x07: 2.8rem;
+  --spacing-x08: 3.2rem;
+  --spacing-x09: 3.6rem;
+  --spacing-x10: 4rem;
+  --spacing-x11: 4.4rem;
+  --spacing-x12: 4.8rem;
+
+  /* borders */
+  --border-01: 1px solid var(--color-white);
+  --border-02: 1px solid var(--color-tertiary);
+  --border-03: 1px solid var(--color-quinaryy);
+
+  /* border radius */
+  --border-radius-01: var(--spacing-x01);
+  --border-radius-02: var(--spacing-x04);
+  --border-radius-03: var(--spacing-x06);
 }
