@@ -1,0 +1,20 @@
+.firstItem {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: var(--spacing-x02);
+  font-weight: var(--font-weight-bold);
+
+  li {
+    gap: var(--spacing-x01);
+  }
+
+  li:not(:last-child) {
+    border-right: var(--border-04);
+    padding-right: var(--spacing-x02);
+  }
+}
+
+.type {
+  text-transform: capitalize;
+}
