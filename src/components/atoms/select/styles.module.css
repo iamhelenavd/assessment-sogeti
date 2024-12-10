@@ -1,0 +1,13 @@
+.select {
+  appearance: none;
+  cursor: pointer;
+  border: none;
+  border-right: var(--border-05);
+  background-color: transparent;
+  padding: var(--spacing-x03) var(--spacing-x05);
+  color: var(--color-black);
+  font-weight: var(--font-weight-bold);
+  font-size: 1.6rem;
+  font-size: 1.4rem;
+  font-family: inherit;
+}
