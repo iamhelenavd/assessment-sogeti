@@ -4,7 +4,7 @@ import {
   useGetMoviesDetailsById,
 } from "../../../queries/fetchData";
 import MovieList from "../movieList/component";
-import ErrorMessage from "../../molecules/errorMessage/component";
+import Message from "../../molecules/message/component";
 
 function SearchResults() {
   // returns all seach params in the url (after '?').
@@ -24,7 +24,11 @@ function SearchResults() {
 
   return (
     <>
-      <ErrorMessage isError={isError} isLoading={detailedMoviesLoading} />
+      <Message
+        isError={isError}
+        isSuccess={isSuccess}
+        isLoading={detailedMoviesLoading}
+      />
       {!detailedMoviesLoading && isSuccess && (
         <MovieList movies={detailedMovies ?? []} />
       )}

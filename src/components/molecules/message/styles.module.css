@@ -1,0 +1,17 @@
+.message {
+  display: flex;
+  row-gap: var(--spacing-x05);
+  grid-column: 1 / -1;
+  flex-direction: column;
+  margin: var(--spacing-x08) 0;
+}
+
+.title {
+  display: flex;
+  align-self: center;
+  font-size: 32px;
+}
+
+.welcomeMessage {
+  padding-top: 5rem;
+}

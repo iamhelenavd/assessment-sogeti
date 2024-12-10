@@ -145,8 +145,3 @@ ul {
       [content-end] auto [full-end];
   }
 }
-
-.errorMessage {
-  display: flex;
-  align-self: center;
-}
