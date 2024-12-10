@@ -1,0 +1,6 @@
+.errorMessage {
+  display: flex;
+  row-gap: var(--spacing-x05);
+  grid-column: 1 / -1;
+  flex-direction: column;
+}

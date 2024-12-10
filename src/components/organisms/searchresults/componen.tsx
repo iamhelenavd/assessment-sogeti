@@ -3,8 +3,8 @@ import {
   useGetMoviesByTitle,
   useGetMoviesDetailsById,
 } from "../../../queries/fetchData";
-import Card from "../../molecules/card/component";
-import ThreeDotsWave from "../../../utils/animations/motion/threeDotsWave";
+import MovieList from "../movieList/component";
+import ErrorMessage from "../../molecules/errorMessage/component";
 
 function SearchResults() {
   // returns all seach params in the url (after '?').
@@ -24,41 +24,9 @@ function SearchResults() {
 
   return (
     <>
-      {detailedMoviesLoading && (
-        <div className="movie-list">
-          <ThreeDotsWave />
-          <h1 className="errorMessage">Loading..</h1>
-        </div>
-      )}
-      {isError && (
-        <div className="movie-list">
-          <ThreeDotsWave />
-          <h1 className="errorMessage">No Matches found</h1>
-        </div>
-      )}
+      <ErrorMessage isError={isError} isLoading={detailedMoviesLoading} />
       {!detailedMoviesLoading && isSuccess && (
-        <ul className="movie-list">
-          {detailedMovies.map(
-            (movie) =>
-              movie && (
-                <li key={movie.imdbID}>
-                  <Card
-                    poster={movie.poster}
-                    title={movie.title}
-                    released={movie.released}
-                    type={movie.type}
-                    year={movie.year}
-                    ratings={movie.ratings}
-                    genre={movie.genre}
-                    director={movie.director}
-                    actors={movie.actors}
-                    plot={movie.plot}
-                    awards={movie.awards}
-                  />
-                </li>
-              ),
-          )}
-        </ul>
+        <MovieList movies={detailedMovies ?? []} />
       )}
     </>
   );
