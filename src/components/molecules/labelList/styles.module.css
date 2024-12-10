@@ -1,4 +1,4 @@
-.firstItem {
+.list {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -6,7 +6,10 @@
   font-weight: var(--font-weight-bold);
 
   li {
+    display: inline-flex;
+    align-items: center;
     gap: var(--spacing-x01);
+    line-height: 1;
   }
 
   li:not(:last-child) {

@@ -1,5 +1,5 @@
 .plot {
-  font-weight: var(--light-font-weigh);
+  font-weight: var(--font-weight-light);
   line-height: 1.5;
 
   @media (width >= 768px) {

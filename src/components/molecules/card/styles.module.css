@@ -1,8 +1,8 @@
 .card {
   display: flex;
+  row-gap: var(--spacing-x05);
   flex: 1;
   flex-direction: column;
-  row-gap: var(--spacing-x05);
   @media (width >= 768px) {
     flex-direction: row;
   }

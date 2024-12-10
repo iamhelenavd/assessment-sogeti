@@ -12,12 +12,16 @@ function AwardList(props: SquareListProps) {
   return (
     <ul className={styles.labelsWrapper}>
       <li>
-        <TbAward size={24} color="#f5c518" />
+        <span>
+          <TbAward size={24} color="#f5c518" />
+        </span>
         {awards}
       </li>
       {director && (
         <li>
-          <TbChairDirector size={24} color="#0ea39e" />
+          <span>
+            <TbChairDirector size={24} color="#0ea39e" />
+          </span>
           {director}
         </li>
       )}

@@ -1,13 +1,14 @@
+import { ReactNode } from "react";
 import styles from "./styles.module.css";
 
 type Plot = {
-  plot?: string;
+  children: ReactNode;
 };
 
 function Plot(props: Plot) {
-  const { plot } = props;
+  const { children } = props;
 
-  return <p className={styles.plot}>{plot}</p>;
+  return <p className={styles.plot}>{children}</p>;
 }
 
 export default Plot;

@@ -10,15 +10,15 @@ type LabelListProps = {
 function LabelList(props: LabelListProps) {
   const { year, type, ratings } = props;
   return (
-    <ul className={styles.firstItem}>
+    <ul className={styles.list}>
       {type && <li className={styles.type}>{type}</li>}
       {ratings?.map((rating, index) => {
         return (
           <li key={index}>
             <span>
-              <ImStarFull size={12} color="#f5c518" />
+              <ImStarFull size={12} color="var(--color-tertiary)" />
             </span>
-            {rating.value}
+            <span>{rating.value}</span>
           </li>
         );
       })}

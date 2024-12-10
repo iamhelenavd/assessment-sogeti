@@ -5,7 +5,7 @@ import AwardList from "../awardList/component";
 import Plot from "../../atoms/plotItem/component";
 import PillList from "../pillList/component";
 
-type MovieDetailsComponentProps = {
+export type MovieDetailsComponentProps = {
   full?: boolean;
   released?: string;
   title: string;
@@ -18,6 +18,7 @@ type MovieDetailsComponentProps = {
   awards: string;
   poster?: string;
   genre?: Array<string>;
+  imdbID?: string;
 };
 
 function Card(props: MovieDetailsComponentProps) {
@@ -47,7 +48,7 @@ function Card(props: MovieDetailsComponentProps) {
         <CardHeader released={released} title={title} />
         <LabelList ratings={ratings} type={type} year={year} />
         <AwardList awards={awards} director={director} />
-        <Plot plot={plot} />
+        <Plot>{plot}</Plot>
         {genre && <PillList isGhost items={genre} />}
         {actors && <PillList title="Actors:" items={actors} />}
       </div>

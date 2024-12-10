@@ -5,6 +5,6 @@
 }
 
 .ghost {
-  border:  var(--border-01);
+  border: var(--border-01);
   background-color: transparent;
 }
