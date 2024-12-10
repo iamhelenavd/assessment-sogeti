@@ -1,7 +1,7 @@
 .input {
   margin: 0;
   border: 0;
-  width: 100%;
-  color:  var(--color-black);
   padding: var(--spacing-x03) var(--spacing-x05);
+  width: 100%;
+  color: var(--color-black);
 }
