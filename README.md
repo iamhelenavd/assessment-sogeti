@@ -15,24 +15,24 @@ Throughout the development process, I focused on creating a user-friendly and ef
 
 ## Requirements
 
-- [&#10004] The application can search movies by title
-- [&#10004] Used State management and management by TanStack.
-- [&#10004] A single search query returns the top 5 movies as provided by the Search API
-- [&#10004] For each movie the following information will be displayed: poster,
+- ✅ The application can search movies by title
+- ✅ Used State management and management by TanStack.
+- ✅ A single search query returns the top 5 movies as provided by the Search API
+- ✅ For each movie the following information will be displayed: poster,
   title(released), type, year, rated, genre, director, actors, plot(full), awards
-- [&#10004] The application highlights two predefined movies, displaying the following information: title, year, awards, poster,
+- ✅ The application highlights two predefined movies, displaying the following information: title, year, awards, poster,
   plot(full)
-- [&#10004] When searching movies plot can be set to either ‘full‘ or ‘short’.
-- [&#10004] Display genre and actors as a list instead of comma separated
-- [&#10004] Responsive design
+- ✅ When searching movies plot can be set to either ‘full‘ or ‘short’.
+- ✅ Display genre and actors as a list instead of comma separated
+- ✅ Responsive design
 
 ## Built with
 
 - [TypeScript](https://www.typescriptlang.org/docs/)
 - [React](https://react.dev/)
 - [Vite](https://vite.dev/guide/)
-- [Tanstack Queries](https://valibot.dev/)
-- [Tanstack Router](https://storybook.js.org/)
+- [Tanstack Queries](https://tanstack.com/query/latest)
+- [Tanstack Router](https://tanstack.com/router/latest)
 - [Tanstack Form](https://tanstack.com/form/latest)
 - [(Framer) Motion](https://www.framer.com/motion/)
 
