@@ -1,12 +1,7 @@
 import { Link } from "@tanstack/react-router";
+import LinkButton from "../../atoms/linkButton/component";
+import Form from "../../organisms/form/component";
 import styles from "./styles.module.css";
-import { startConfetti } from "../../../utils/animations/confetti/confetti";
-import Form from "../../organisms/form/comopnent";
-import { TbConfetti } from "react-icons/tb";
-
-const handeClick = () => {
-  startConfetti();
-};
 
 function Navigation() {
   return (
@@ -15,10 +10,7 @@ function Navigation() {
         Home
       </Link>
       <Form className={styles.form} />
-      <Link onClick={handeClick} className={styles.linkButton} to="/featured">
-        Featured {""}
-        <TbConfetti size={20}/>
-      </Link>
+      <LinkButton to="/featured">Featured</LinkButton>
     </nav>
   );
 }

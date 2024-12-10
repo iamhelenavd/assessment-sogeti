@@ -1,0 +1,23 @@
+.button {
+  display: flex;
+  position: relative;
+  align-items: center;
+  order: 2;
+  gap: var(--spacing-x01);
+  border-radius: var(--border-radius-03);
+  background-color: var(--color-tertiary);
+  padding: var(--spacing-x03) var(--spacing-x04);
+  color: var(--color-black);
+  font-weight: var(--font-weight-extra-bold);
+  line-height: 1.25rem;
+  text-decoration: none;
+
+  @media (width >= 768px) {
+    order: 3;
+    margin-left: auto;
+  }
+
+  svg {
+    padding-bottom: 2px;
+  }
+}
