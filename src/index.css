@@ -1,9 +1,23 @@
+body {
+  font-size: var(--base-font-size);
+}
+
+html {
+  font-size: 62.5%;
+}
+
 :root {
-  font-weight: 400;
-  line-height: 1.5;
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  font-synthesis: none;
+  font-family: var(--base-font-family);
+  font-optical-sizing: auto;
+  font-weight: var(--base-font-weight);
+  line-height: 1.4;
+  font-style: normal;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  /* font-size */
+  --base-font-family: "Roboto", Arial, sans-serif;
+  --base-font-size: 1.6rem;
+  --base-font-weight: 400;
 }
