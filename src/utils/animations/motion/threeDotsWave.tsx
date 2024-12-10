@@ -49,7 +49,6 @@ export default function ThreeDotsWave() {
   return (
     <div
       style={{
-        paddingTop: "5rem",
         width: "100%",
         display: "flex",
         alignItems: "center",
