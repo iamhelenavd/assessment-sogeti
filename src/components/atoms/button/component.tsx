@@ -11,7 +11,7 @@ function Button(props: ButtonProps) {
   return (
     <button {...props} className={styles.button}>
       {children}
-      {icon && <TbSearch size={22} color="#808080" />}
+      {icon && <TbSearch size={22} color="var(--color-quaternairy)" />}
     </button>
   );
 }
